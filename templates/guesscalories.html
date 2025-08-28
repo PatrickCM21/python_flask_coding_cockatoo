@@ -1,0 +1,97 @@
+<div class="container align-items-center">
+    <div class="row h2 text-center d-flex justify-content-center border-top border-2 border-primary pt-1">
+        How Many {{measurement}} Do You Think This Has?
+    </div>
+    <div class="row justify-content-center">
+        <div class="col d-flex flex-column align-items-center mb-1">
+            <div class="row">
+                <img class="guesserImg" src="{{img}}">
+            </div>
+            <div class="row text-center">
+                <div id="food1name">
+                    <div class="h3">{{food}}</div>
+                </div>
+                <div id="foodcal">
+                    ???
+                </div>
+            </div>
+        </div>
+        <div class="row mb-2 justify-content-center">
+            <input type="range" min="200" max="2000" value="50" class="slider w-75" id="calorieRange">     
+        </div>   
+        <div class="row text-center mb-2" id="sliderValue"></div>
+        <div class="row justify-content-center"><div class="col-md-auto d-flex flex-column align-items-center"><button id="button" class="btn btn-primary">Check</button></div> </div>
+        <div class="row mb-3 mt-2 text-center">
+            <div id="correct" class="d-none h2 text-success">Congratulations, you got it right! Thats 60% of your average man's daily intake. Insane</div>
+            <div id="wrong" class="d-none h2 text-danger">Not quite. Insane I always order this. Thats 60% of your average man's daily intake.</div>
+            <div id="nextQuestion" class="d-none mt-1"><button class="btn btn-primary">Next Question!</button></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    setTimeout(() => {
+        window.scrollTo(0, document.body.scrollHeight);
+        var slider = document.getElementById('calorieRange')
+        var value = document.getElementById('sliderValue')
+
+        var measure = '{{measure}}'
+        var measurement = '{{measurement}}'
+        if (measurement === 'Kilojoules') {
+            measure = measure * 4.184
+            slider.setAttribute("min", Math.floor(20*4.184))
+            slider.setAttribute("max", Math.floor(2000*4.184))
+        }
+
+        slider.oninput = function() {
+            value.innerHTML = `<b>${this.value}</b>`
+        }
+
+        document.getElementById('button').addEventListener('click', submitAnswer)
+
+        function submitAnswer(event) {
+            var pressedButton = document.getElementById('button')
+            if (measurement == "Kilojoules") {
+                if ((slider.value > measure - 210) && ((slider.value < measure + 210))) {
+                    const correct = document.getElementById('correct')
+                    correct.classList.remove('d-none')
+                    pressedButton.classList.add('btn-success', 'disabled')
+                    pressedButton.classList.remove('btn-outline-primary')
+                    value.classList.add('text-success')
+                }else {
+                    const wrong = document.getElementById('wrong')
+                    wrong.classList.remove('d-none')
+                    pressedButton.classList.add('btn-danger', 'disabled')
+                    pressedButton.classList.remove('btn-outline-primary')
+                    value.classList.add('text-danger')
+                }
+            } else {
+                if ((slider.value > measure - 50) && ((slider.value < measure + 50))) {
+                    const correct = document.getElementById('correct')
+                    correct.classList.remove('d-none')
+                    pressedButton.classList.add('btn-success', 'disabled')
+                    pressedButton.classList.remove('btn-outline-primary')
+                    value.classList.add('text-success')
+                }else {
+                    const wrong = document.getElementById('wrong')
+                    wrong.classList.remove('d-none')
+                    pressedButton.classList.add('btn-danger', 'disabled')
+                    pressedButton.classList.remove('btn-outline-primary')
+                    value.classList.add('text-danger')
+                }
+            }
+            const foodcal = document.getElementById('foodcal')
+            foodcal.innerHTML = `<b>${Math.floor(measure)}</b> ${measurement}`
+            const next = document.getElementById('nextQuestion')
+            next.classList.remove('d-none')
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+        
+        document.getElementById('nextQuestion').addEventListener('click', nextQuestion)
+        
+
+        function nextQuestion() {
+            getQuestion("Sugar", 0)
+        }
+    })
+</script>

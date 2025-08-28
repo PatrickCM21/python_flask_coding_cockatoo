@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<h1 class="text-center mt-3">COMP1511 Assessment 1 Line of Sight Tester</h1>
+
+<div class="container">
+    <form>
+        <div class="row">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                <label class="fw-bold">Position of Player: </label>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                <div class="">
+                    <label class="me-2">Row: </label><input id='player-row' type="textbox" placeholder="0-9" size="2">
+                    <label class="me-2">Col: </label><input id='player-col' type="textbox" placeholder="0-9" size="2">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                <label class="fw-bold">Position of Block To Check: </label>
+            </div>
+            <div class="d-flex justify-content-center align-items-center gap-2">
+                <div class="">
+                    <label class="me-2">Row: </label><input id='block-row' type="textbox" placeholder="0-9" size="2">
+                    <label class="me-2">Col: </label><input id='block-col' type="textbox" placeholder="0-9" size="2">
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center gap-2 mt-2">
+            <div class="">
+                <input id= "submit" type="button" class="btn btn-primary" value="submit">
+            </div>
+            
+        </div>
+    </form>
+    <h2 class='text-center mt-2'>Map With Line of Sight:</h2>
+    <p class="text-center mb-1">Orange is the player. Blue is the block.</p>
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <canvas id="map" width="500" height="500">
+            <p>A canvas should be here, your browser must not be able to support it. Sorry :(</p>
+        </canvas>
+    </div>
+</div>
+
+<script src="{{url_for('static', filename='script1511Shadows.js')}}"></script>
+{% endblock %}

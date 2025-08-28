@@ -1,0 +1,96 @@
+<div class="container align-items-center">
+    <div class="row h2 text-center d-flex justify-content-center border-top border-2 border-primary pt-1">
+        Which One Of These Has More {{measurement}}?
+    </div>
+    <div class="row justify-content-center">
+        <div class="col d-flex flex-column align-items-center">
+            <div class="row">
+                <img class="guesserImg" src="{{img1}}">
+            </div>
+            <div class="row text-center">
+                <div id="food1name">
+                    <button class="btn btn-outline-primary" id="button1">{{food1}}</button>
+                </div>
+                <div id="food1cal">
+                    ???
+                </div>
+            </div>
+        </div>
+        <div class="col d-flex flex-column align-items-center">
+            <div class="row">
+                <img class="guesserImg" src="{{img2}}">
+            </div>
+            <div class="row text-center">
+                <div id="food2name">
+                    <button class="btn btn-outline-primary" id="button2">{{food2}}</button>
+                </div>
+                <div id="food2cal">
+                    ???
+                </div>
+            </div>
+        </div>
+        <div class="row mb-3 mt-2 text-center">
+            <div id="correct" class="d-none h2 text-success">Congratulations, you got it right!</div>
+            <div id="wrong" class="d-none h2 text-danger">I told you it was hard. I was shocked too.</div>
+            <div id="nextQuestion" class="d-none mt-1"><button class="btn btn-primary">Next Question!</button></div>
+        </div>
+    </div>
+</div>
+
+<script>
+    setTimeout(() => {
+        window.scrollTo(0, document.body.scrollHeight);
+        var measure1 = '{{measure1}}'
+        var measure2 = '{{measure2}}'
+        var measurement = '{{measurement}}'
+        if (measurement === 'Kilojoules') {
+            measure1 = measure1 * 4.184
+            measure2 = measure2 * 4.184
+        }
+
+        document.getElementById('button1').addEventListener('click', submitAnswer)
+        document.getElementById('button2').addEventListener('click', submitAnswer)
+
+        function submitAnswer(event) {
+            const chosenAnswer = event.target
+            const button1 = document.getElementById('button1')
+            const button2 = document.getElementById('button2')
+            
+            let correctAnswer = ''
+            if (measure1 > measure2) {
+                correctAnswer = `{{food1}}`
+                button1.classList.add('btn-success', 'disabled')
+                button1.classList.remove('btn-outline-primary')
+                button2.classList.add('btn-danger', 'disabled')
+                button2.classList.remove('btn-outline-primary')
+            } else {
+                correctAnswer = `{{food2}}`
+                button2.classList.add('btn-success', 'disabled')
+                button2.classList.remove('btn-outline-primary')
+                button1.classList.add('btn-danger', 'disabled')
+                button1.classList.remove('btn-outline-primary')
+            }
+            if (chosenAnswer.innerText === correctAnswer) {
+                const correct = document.getElementById('correct')
+                correct.classList.remove('d-none')
+
+            }else {
+                const wrong = document.getElementById('wrong')
+                wrong.classList.remove('d-none')
+            }
+            const food1cal = document.getElementById('food1cal')
+            food1cal.innerHTML = `<b>${Math.floor(measure1)}</b> ${measurement}`
+            const food2cal = document.getElementById('food2cal')
+            food2cal.innerHTML = `<b>${Math.floor(measure2)}</b> ${measurement}`
+            const next = document.getElementById('nextQuestion')
+            next.classList.remove('d-none')
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+        
+        document.getElementById('nextQuestion').addEventListener('click', nextQuestion)
+
+        function nextQuestion() {
+            getQuestion("GuessCalories", 0)
+        }
+    })
+</script>

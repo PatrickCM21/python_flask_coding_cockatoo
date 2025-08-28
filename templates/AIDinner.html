@@ -1,0 +1,85 @@
+    {% extends "layout.html" %}
+
+    {% block body %}
+        <main>
+            <section class="container">
+                <form id="first-submit">
+                    <section class="border-bottom border-secondary border-1">
+                        <h1 class="mt-3">Your Dream Dinner Table Conversation</h1>
+                        <p style="font-style: italic; font-size: 14px;">Decide how many people you want, what you'll be talking about, and the vibes of the occasion. Living, dead, or fiction. Civility or chaos, it's up to you.</p>
+                    </section>            
+                    <section class="border-bottom border-secondary border-1 mt-2 ">
+                        <label class="form-label">How Many People Are Attending Your Dinner? </label>
+                        <label for="person1" class="form-label form-check-label"><input value="2" name = "person-no" id="person2" type="radio" class="form-check-input" checked> 2</label>
+                        {% for guest in range(guests - 1) %}
+                        <label for="person{{guest +3}}" class="form-label form-check-label"><input value="{{guest +3}}" name = "person-no" id="person{{guest +3}}" type="radio" class="form-check-input"> {{guest + 3}}</label>
+                        {% endfor %}
+                    </section> 
+                    <fieldset class="border-bottom border-secondary border-1">
+                        <label class="input-label mb-2 mt-2">Your Name: </label>
+                        <input id="user" class="peoples-names mb-2" class="input-box form-control" name ="user" placeholder="First name" required></input>
+                    </fieldset>                   
+                    <fieldset class="border-bottom border-secondary border-1">
+                        <label class="input-label mb-2 mt-2">Your Dinner Guests: </label>
+                        <input id="personinput1" class="input-box mb-2" name ="personinput1" placeholder="Anyone you dream of..." required></input>
+                        <input id="personinput2"  class="input-box mb-2" name ="personinput2" placeholder="Anyone you dream of..." required></input>
+                        {% for i in range(guests - 1) %}
+                        <input id="personinput{{i + 3}}"  class="input-box d-none mb-2" name ="personinput{{i + 3}}" placeholder="Anyone you dream of..."></input>
+                        {% endfor %}
+                    </fieldset>
+                    <fieldset class="border-bottom border-secondary border-1">
+                        <label class="input-label mb-2 mt-2">Your Conversation Topic: </label>
+                        <input id="topic" name="topic" class="input-box mb-2" required></input>
+                    </fieldset>
+                    <fieldset class="border-bottom border-secondary border-1">
+                        <label class="input-label mb-2 mt-2">The Setting: </label>
+                        <input id="context" name="context" class="input-box mb-2" placeholder="Year, current event, location" class="input-box" size = "30"></input>
+                    </fieldset>
+                    <fieldset class="border-bottom border-secondary border-1">
+                        <label class="input-label mb-2 mt-2">The Mood: </label>
+                        <select id="mood" name="mood">
+                            <option value="none">None</option>
+                            <option value="tense">Tense</option>
+                            <option value="joyful">Joyful</option>
+                            <option value="sad">Sad</option>  
+                            <option value="romantic">Romantic</option>                         
+                        </select>
+                    </fieldset>
+                    <div class="row mt-2">
+                        <div class="col-md-auto">
+                            <button type="submit" class="btn mb-2 btn-primary" id="initial-submit-button">Start Your Conversation.</button>
+                        </div>
+                        <div class="col-md-auto mt-1">
+                            <div class="spinner-border text-primary d-none" role="status" id="loading-initial">
+                                <span class="visually-hidden">Loading...</span>
+                            </div>
+                        </div>
+                        <div class="col-md-auto mb-1 d-none" id="error-message">ChatGPT caused an error, please refresh and try again</div>
+                    </div>
+                </form>
+            </section>
+            <section id="discussion" class="container">
+                
+            </section>
+        </main>
+        <form id="subsequent-submit"> 
+            <section class="container">
+                <div class="row">
+                    <div class="col-md-auto mt-1">
+                        <label>Your Contribution: <input type="textbox" id="user-response" class="mb-2" ></label>
+                    </div>
+                    <div class="col-md-auto">
+                        <button class = "btn mb-2 btn-secondary " type="submit" size="30" id="user-response-button" disabled>Contribute</button>
+                    </div>
+                    <div class="col-md-auto mt-1">
+                        <div class="spinner-border text-primary d-none" role="status" id="loading-subsequent">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </form>
+        <script src="{{ url_for('static', filename='scriptDinner.js') }}"> </script>
+        </footer>
+    {% endblock %}

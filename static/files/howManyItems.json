@@ -1,0 +1,114 @@
+[
+    {
+        "Name" : "Toyota Corolla's Manufactured",
+        "Base_Amount" : 54000000,
+        "ROC" : 2,
+        "Info": "Don't tell anyone but I'm still on my L's.",
+        "Img": "https://editorial.pxcrush.net/carsales/general/editorial/220406_toyota_corolla_ascent_sport_hybrid_28-ntl5.jpg?width=1024&height=682"
+    },
+    {
+        "Name" : "Sulpher-Crested Cockatoo's Born",
+        "Base_Amount" : 0,
+        "ROC" : 13,
+        "Info": "The best bird, hands-down.",
+        "Img": "https://cdn.download.ams.birds.cornell.edu/api/v2/asset/622584393/900"
+    },
+    {
+        "Name" : "Nintendo Switch's Sold",
+        "Base_Amount" : 141000000,
+        "ROC" : 34.7,
+        "Info": "That's a lot of people I could destroy in Mario Kart.",
+        "Img": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nintendo_Switch_Console.png/1200px-Nintendo_Switch_Console.png"
+    },
+    {
+        "Name" : "Downloads of Minecraft",
+        "Base_Amount" : 325000000,
+        "ROC" : 48,
+        "Info": "Best $20 I ever made my parents spend. Crazy it costs $40 now.",
+        "Img": "https://cdn2.steamgriddb.com/icon_thumb/4a5b76e7170df685ed8b75c7dacce268.png"
+    },
+    {
+        "Name" : "Babies Born",
+        "Base_Amount" : 117025000000,
+        "ROC" : 250,
+        "Info": "Too bad they're so ugly.",
+        "Img": "https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,ar_1:1,f_auto,q_auto,g_auto/shape/cover/sport/baby-0-6c1fb56049ed7442c2eb8b70baaf3ba3.jpg"
+    },
+    {
+        "Name" : "iPhone's Produced",
+        "Base_Amount" : 2419370000,
+        "ROC" : 446,
+        "Info": "To be honest I'm more of an Android guy myself.",
+        "Img": "https://www.myitshop.com.au/wp-content/uploads/iphone-x-transparent.png"
+    },
+    {
+        "Name" : "Amazon Packages Delivered",
+        "Base_Amount" : 0,
+        "ROC" : 1111,
+        "Info": "We sure do buy a lot of random stuff.",
+        "Img": "https://i.kinja-img.com/image/upload/c_fill,h_675,pg_1,q_80,w_1200/747c2debd5bc99d3b20c52d1bab4f6f9.jpg"
+    },
+    {
+        "Name" : "Nike Shoe's Shipped",
+        "Base_Amount" : 0,
+        "ROC" : 1522,
+        "Info": "The running shoe noone evers runs in.",
+        "Img": "https://static.nike.com/a/images/t_default/0f76f73e-2578-4d62-abab-c5563ea4f78c/NIKE+DUNK+LOW+RETRO.png"
+    },
+    {
+        "Name" : "Big Mac's Flipped",
+        "Base_Amount" : 0,
+        "ROC" : 1667,
+        "Info": "The world's most popular burger. And #1 contributor to Diabetes, probably.",
+        "Img": "https://corporate.mcdonalds.com/content/dam/sites/corp/nfl/newsroom/menu-items-2023/NR_202302_0005-999_BigMac_2000x2000.png"
+    },
+    {
+        "Name" : "Youtube Video's Uploaded",
+        "Base_Amount" : 14000000000,
+        "ROC" : 2500,
+        "Info": "No wonder my videos get no views.",
+        "Img": "https://www.iconpacks.net/icons/2/free-youtube-logo-icon-2431-thumb.png"
+    },
+    {
+        "Name" : "Food Wasted (In Tons)",
+        "Base_Amount" : 0,
+        "ROC" : 4756,
+        "Info": "24% of all food calories ends up wasted. Less than 0.1% of this could fix world hunger.",
+        "Img": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/800px-Good_Food_Display_-_NCI_Visuals_Online.jpg"
+    },
+    {
+        "Name" : "Tree's Cut Down",
+        "Base_Amount" : 0,
+        "ROC" : 29167,
+        "Info": "Humans have cut down 1.1 billion hectares of forest since 1900, the same amount that was lost between 7100 BC and 1900.",
+        "Img": "https://www.metroparks.net/wp-content/uploads/2017/06/1080p_HBK_autumn-morning_GI.jpg"
+    },
+    {
+        "Name" : "Elon Musk's Net Worth Increased",
+        "Base_Amount" : 419200000000,
+        "ROC" : 37882,
+        "Info": "He makes what you'll work your whole life to earn in... 10 minutes.",
+        "Img": "https://imageio.forbes.com/specials-images/imageserve/62d700cd6094d2c180f269b9/0x0.jpg?format=jpg&crop=959,959,x0,y0,safe&height=416&width=416&fit=bounds"
+    },
+    {
+        "Name" : "Human Carbon Emissions (In Tons)",
+        "Base_Amount" : 37400000000,
+        "ROC" : 69236,
+        "Info": "But it's okay, the rich people have decided climate change is a 40-year-long scientific hoax!",
+        "Img": "https://assets.weforum.org/article/image/ZceAxbIcK8seaoQU8DFS-l_Dq7YPPzmx_MNYE2C0aOU.jpg"
+    },
+    {
+        "Name" : "Lego Pieces Created",
+        "Base_Amount" : 1100000000000,
+        "ROC" : 83333,
+        "Info": "Lego Star Wars is the best set series hands down.",
+        "Img": "https://i.ebayimg.com/00/s/MTE4NlgxNjAw/z/l4IAAOSwzrxUvDXC/$_57.JPG?set_id=880000500F"
+    },
+    {
+        "Name" : "Tweet's Tweeted (Or, X's X'd?)",
+        "Base_Amount" : 2600000000000,
+        "ROC" : 350000,
+        "Info": "Some estimate that nearly half of these may be from just Elon Musk.",
+        "Img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/X_logo.jpg/480px-X_logo.jpg"
+    }
+]

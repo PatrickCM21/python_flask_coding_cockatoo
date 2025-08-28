@@ -1,0 +1,117 @@
+[
+  {
+    "question": "You die and arrive at the afterlife and are asked one question. 'What is your most valued memory from your life?'",
+    "answers": [
+      "A moment of confidence as you took a leap of faith.",
+      "A moment of peace as you flowed with life's currents.",
+      "A moment of deep connection through moral clarity.",
+      "A moment of practical accomplishment through effort and focus."
+    ],
+    "answer_philosopher": ["Albert Camus", "Laozi", "Immanuel Kant", "Aristotle"]
+  },
+  {
+    "question": "In your moments of free time, you spend it...",
+    "answers": [
+      "Wandering and letting life take you where it will.",
+      "Journaling your thoughts and reflecting on your actions.",
+      "Pursuing a balance of learning and leisure.",
+      "Exploring activities that don't have much utility but bring joy."
+    ],
+    "answer_philosopher": ["Laozi", "Marcus Aurelius", "Aristotle", "Albert Camus"]
+  },
+  {
+    "question": "You are asked to say a few words at your graduation. You talk about:",
+    "answers": [
+      "Embracing life's meaninglessness but making the most of it.",
+      "Finding purpose through social principles and duty.",
+      "The importance of balance and growth in all pursuits.",
+      "Accepting life's unpredictability and finding harmony within it."
+    ],
+    "answer_philosopher": ["Albert Camus", "Immanuel Kant", "Aristotle", "Laozi"]
+  },
+  {
+    "question": "The most important value in the connections you make with others is...",
+    "answers": [
+      "Loyalty and support grounded in helping each other align with principles.",
+      "Honestly helping each other find answers about life's uncertainties.",
+      "Light-heartedness and the naturally allowing them to take life as it comes.",
+      "Practical wisdom and mutual growth through keeping each other accountable and focused."
+    ],
+    "answer_philosopher": ["Immanuel Kant", "Albert Camus", "Laozi", "Aristotle"]
+  },
+  {
+    "question": "You stand at the edge of a cliff, looking at the vast expanse of ocean. What do you feel?",
+    "answers": [
+      "A connection, as you yourself are part of the natural flow of life.",
+      "Wonder at the beauty and craziness of it all.",
+      "A sense of moral purpose to leave the world better than you found it.",
+      "Gratitude for the opportunity to exist, challenge yourself and grow."
+    ],
+    "answer_philosopher": ["Laozi", "Albert Camus", "Immanuel Kant", "Marcus Aurelius"]
+  },
+  {
+    "question": "Art is...",
+    "answers": [
+      "An extension of our need to find meaning.",
+      "An intuitive urge to present our humanity.",
+      "A lens to understand the human condition.",
+      "A reflection of human excellence and creativity."
+    ],
+    "answer_philosopher": ["Albert Camus", "Laozi", "Immanuel Kant", "Aristotle"]
+  },
+  {
+    "question": "You meet someone who challenges your core beliefs. How do you react?",
+    "answers": [
+      "Try to understand their perspective and adapt naturally.",
+      "Laugh and enjoy the debate; beliefs are personal.",
+      "Defend your beliefs passionately; moral clarity is essential.",
+      "Reflect on whether their ideas offer practical insights."
+    ],
+    "answer_philosopher": ["Laozi", "Albert Camus", "Immanuel Kant", "Marcus Aurelius"]
+  },
+  {
+    "question": "What's your relationship with rules?",
+    "answers": [
+      "Rules are relative and often arbitrary.",
+      "They should align with natural and universal principles.",
+      "Rules create order and fairness through rationality.",
+      "They exist to cultivate practical outcomes and virtue."
+    ],
+    "answer_philosopher": ["Albert Camus", "Laozi", "Immanuel Kant", "Aristotle"]
+  },
+  {
+    "question": "When faced with failure, you...",
+    "answers": [
+      "Focus on logical steps to address what went wrong and execute it again soon.",
+      "Feel grateful that the challenge will force you to improve.",
+      "Accept it. It is in line with your expectation of life's ups and downs.",
+      "Know that a problem is only a problem if you think it is."
+    ],
+    "answer_philosopher": ["Aristotle", "Marcus Aurelius", "Laozi", "Albert Camus"]
+  },
+  {
+    "question": "Your primary allegiance is:",
+    "answers": [
+      "To yourself.",
+      "To your greater power.",
+      "To your community.",
+      "To your work."
+    ],
+    "answer_philosopher": ["Albert Camus", "Immanuel Kant", "Marcus Aurelius", "Aristotle"]
+  },
+  {
+    "question": "Pick a moment to witness:",
+    "answers": [
+      "The end of the universe.",
+      "Exactly as you are now.",
+      "The birth of the universe.",
+      "Neither-existence itself is the marvel."
+    ],
+    "answer_philosopher": ["Albert Camus", "Marcus Aurelius", "Aristotle", "Laozi"]
+  },
+  {
+    "question": "Pick a cheese:",
+    "answers": ["Camembert", "Cheddar", "Blue cheese", "Feta"],
+    "answer_philosopher": ["Albert Camus", "Immanuel Kant", "Laozi", "Aristotle"]
+  }
+]  

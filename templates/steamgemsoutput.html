@@ -1,0 +1,58 @@
+<div class="row h4 mt-1 mb-2 text-center justify-content-center">Maybe You Should Try...</div>
+
+<div id="list"></div>
+
+</div>
+
+<div class="row mt-3"></div> 
+<!-- empty for footer -->
+<script>
+setTimeout(() => {
+    var userData = JSON.parse('{{userData | tojson | safe}}');
+    console.log(userData)
+    var gameInfo = document.getElementById('list')
+    for (i = 0; i < userData.length; i++) {
+        console.log(userData[i])
+        var data = document.createElement('div')
+        data.classList.add('d-flex', 'text-center', 'justify-content-center','align-items-center', 'border', 'border-2', 'border-success', 'p-1')
+
+        var infoCol = document.createElement('div')
+        infoCol.classList.add('col-3')
+
+        var titleRow = document.createElement('label')
+        titleRow.classList.add('row', 'fw-bold', 'h3', 'justify-content-center')
+        titleRow.innerHTML = userData[i]["name"]
+        
+        var ratingLbl = document.createElement('label')
+        ratingLbl.classList.add('row', 'justify-content-center')
+        ratingLbl.innerText = `Rating: ${Math.floor(userData[i]["rating"])}`
+
+        infoCol.appendChild(titleRow)
+        infoCol.appendChild(ratingLbl)
+
+        data.appendChild(infoCol)
+
+        var imgCol = document.createElement('div')
+        imgCol.classList.add('col-3')
+
+        var img = document.createElement('img')
+        img.classList.add('gemImg', 'justify-content-center', 'col-md-auto')
+        img.src = `https://images.igdb.com/igdb/image/upload/t_thumb/${userData[i]["cover"]["image_id"]}.jpg`
+
+        imgCol.appendChild(img)
+
+        data.appendChild(imgCol)
+
+        gameInfo.appendChild(data)
+
+        if (i != userData.length - 1) { 
+            var separate = document.createElement('div')
+            separate.classList.add('row', 'mt-2', 'mb-2', 'bold', "h3", 'justify-content-center')
+            separate.innerHTML="Or..."
+            gameInfo.appendChild(separate)
+        }
+    }
+}) 
+
+
+</script>

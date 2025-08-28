@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<form id="form-submit">
+    <div class="container mt-3 mb-2 pb-1 border-bottom border-secondary border-1 text-center"> 
+        <div class="row">
+            <div class="col-md-auto">
+                <img style="width: 50px; height: auto" src="{{url_for('static', filename='images/phisoclogo.jpg') }}">
+            </div>       
+            <div class="col h1">Philosophy Society MBTI Quiz!</div>
+            <div class="col-md-auto">
+                <img style="width: 50px; height: auto" src="{{url_for('static', filename='images/phisoclogo.jpg') }}">
+            </div>
+        </div>
+    </div> 
+    <div class="container-fluid ps-4 pe-4"> 
+        {% for i in range(questionscount) %} 
+            <div class="row mb-2 border-bottom border-secondary border-1 radios">
+                <div class="row w-100 form-label fst-italic mbtiQuestion" >{{ questions[i]["question"] }}</div>
+                {% for j in range(4) %}  
+                <div class="row"><label for="q{{i}}a{{j}}" class="form-label form-check-label mbtiAnswers"><input value="{{ questions[i].answer_philosopher[j] }}" name="q{{i}}ans" id="q{{i}}a{{j}}" type="radio" class="form-check-input"> {{ questions[i]["answers"][j] }}</label></div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+        <div class="row w-100 form-label fst-italic mbtiQuestion"> What Roundtable topic would interest you the most?</div>
+        <div class="row">
+        <label for="roundtableq1" class="form-label form-check-label mbtiAnswers"><input name="roundtableans" id="roundtableq1" type="radio" class="form-check-input" value="r1">r1</label>
+        </div>
+        <div class="row">
+        <label for="roundtableq2" class="form-label form-check-label mbtiAnswers"><input name="roundtableans" id="roundtableq2" type="radio" class="form-check-input" value="r2">r2</label>
+        </div>
+        <div class="row">
+        <label for="roundtableq3" class="form-label form-check-label mbtiAnswers"><input name="roundtableans" id="roundtableq3" type="radio" class="form-check-input" value="r3">r3</label>
+        </div>
+        <div class="row">
+        <label for="roundtableq4" class="form-label form-check-label mbtiAnswers"><input name="roundtableans" id="roundtableq4" type="radio" class="form-check-input" value="r4">r4</label>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-2">
+            <div class="col-md-auto">
+                <button type="submit" class="btn mb-2 btn-secondary" id="submit-button" disabled>Find Your Philosopher.</button>
+            </div>
+            <div class="col mt-1">
+                <div class="spinner-border text-primary d-none" role="status" id="loading">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<div class="container mt-3 d-none" id="winner_box">
+    <div class="col-md-auto mb-1">
+        <div class="row" id="profile">
+            <div class="col-md-auto" id="pic"></div>
+            <div class="col ml-2" id="namequote">
+                <div id="name"></div>
+                <div id="quote"></div>
+            </div>   
+        </div>
+        <div class="row mt-2" id="text"><h4>Your Maxims:</h4></div>
+        <div class="row mt-2" id="weakness"><h4>Your Weakness:</h4></div>
+        <div class="row mt-2" id="similars"><h4>Similar Philosophers:</h4></div>
+    </div>
+    <button class= "btn mt-2 mb-1 btn-primary" id="reset">Reset</button>
+</div>
+<script> var questionscount = '{{questionscount}}'; var record='{{record}}'; const winners = JSON.parse('{{winnings | tojson | safe}}'); console.log(winners) </script>
+<script src="{{ url_for('static', filename='scriptPhilosophy.js') }}"></script>
+{% endblock %}

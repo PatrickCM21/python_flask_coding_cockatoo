@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="container">
+    <form id="anagramSearch">
+        <div class="h1 text-center mt-3">Actually Alright Anagrams</div>
+        <div class="h4 text-center">Or should I say... 'hAlt cAlling TrAumas a gray'</div>
+        <div class="row mt-3 " for="word">
+            <div class="col-md-auto mb-1 align-self-center">
+                <label class="fw-bold">Word/Phrase To Find Anagrams For: <input for="word" type='text' placeholder="Your Word/Phrase" id="word" size="50"></label>
+            </div>
+            <div class="col">
+                <div class="col-md-auto"> <input type="submit" text="Find Your Anagrams" class="btn mb-2 btn-primary"></div>
+            </div>
+        </div>
+        <div class="row border-bottom border-2 border-primary">
+            <div class="col-md-auto"><label class="fw-bold">Unused Letters: </label></div>
+            <div class="col-md-auto"><label class="fst-italic" id="letters"></label></div>
+        </div>
+    </form>
+</div>
+    <div class="container">
+        <div class="row mt-1">
+            <div class="col">
+                <div class="row h3">Potential Words:</div>
+                <div class="row"><div class="container" id="anagramList"></div></div>     
+            </div>
+            <div class="col-md-auto d-flex">
+                <div class="vr text-black" style="height: 200px; opacity: 100%; width: 2px;"></div>
+            </div>
+            
+            <div class="col">
+                <div class="row h3">Your Chosen List:</div>
+                <div class="row">
+                    <div id="chosenWords"></div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
+<script>var dictionary=JSON.parse('{{dictionary|tojson|safe}}');</script>
+<script src="{{ url_for('static', filename='scriptAnagrams.js')}}"></script>
+{% endblock %}

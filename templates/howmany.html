@@ -1,0 +1,55 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <!-- Title -->
+    <div class="container"><div class="h1 text-center mt-3 mb-2">Since You Opened This Page...</div></div>
+
+    <!-- Data -->
+    <div class="container">
+        {% for item in range(items|length) %}
+        <div class="row mb-2 border border-3 p-2 border-warning bg-white rounded-5">
+                    <div class="col-md-auto align-self-center">
+                        <span class="update odometer">000</span>
+                    </div>
+                    <div class="col">      
+                        <div class="row h4">
+                            <div class="col-auto">{{items[item]["Name"]}}</div>
+                            {% if items[item]["Base_Amount"] != 0 %}
+                            <div class="col-auto">
+                                <i class="fa-solid fa-circle-info fa-l shadow-sm" ></i>
+                                <div class="info-container bases" data-info="" id="info{{item}}">
+                            </div>       
+                            </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="row"><img src="{{items[item]['Img']}}" class ="manyimg border-2 border rounded border-black img-fluid float-left" alt="{{items[item]['Name']}} Photo"></div>
+                        <div class="row">
+                            <div class="col-md-auto d-flex align-items-start">          
+                            {% if 'iPhone' in items[item]["Name"] %}
+                                <div class="row fst-italic border-top border-3 border-warning mt-2">
+                                    <div class="col-auto" id="phone">{{items[item]["Info"]}}</div>
+                                </div>
+                            {% else %}
+                                <div class="row fst-italic border-top border-3 border-warning mt-2">{{items[item]["Info"]}}</div>
+                            {% endif %}
+                    </div>
+                    </div>    
+            </div> 
+
+        </div>
+        {% endfor %}
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/detect.js@2.2.3/detect.min.js"></script>
+<script src="https://kit.fontawesome.com/81d8e73bfa.js" crossorigin="anonymous"></script>
+
+    <!-- Odometer Integration -->
+<link rel="stylesheet" href="http://github.hubspot.com/odometer/themes/odometer-theme-train-station.css" />
+<script src="http://github.hubspot.com/odometer/odometer.js"></script>
+
+
+<script> const items = JSON.parse('{{items | tojson | safe }}'); </script>
+<script src="{{ url_for('static', filename='scriptHowMany.js') }}"></script>
+
+{% endblock %}

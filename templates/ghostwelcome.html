@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row h1 mt-3 text-center justify-content-center">Ghost Notes</div>
+    <div class="row h3 text-center justify-content-center">Send a message to the void and hear something back.</div>
+
+    <div class="row justify-content-center text-center">
+        <label>Your Message:</label>
+        <textarea type="text" id="userMessage" class="form-control w-75" rows="4" placeholder="Maybe give a bit of kindness to the world."></textarea>
+    </div>
+    <div class="d-flex justify-content-center mt-2">
+        <div class=""><button class="btn btn-primary" id="submit">Send it off!</button></div>
+    </div>
+    <div class="d-flex mt-2 justify-content-center" id="alert">
+        <div class="alert alert-danger d-none" role="alert" id="noMessage">
+            <h2>You Need To Write Something Before Submitting!</h2>
+        </div>
+        <div class="alert alert-info d-none" role="alert" id="reminder">
+            <h3>Before You Submit!</h3>
+            <p>This Is Just A Reminder That You Can Only Send 1 Message Per Day, So Make It Count!</p>
+            <hr>
+            <p>If You're Happy Though Then All Good, Press The Button Again!</p> 
+        </div>
+    </div>
+</div>

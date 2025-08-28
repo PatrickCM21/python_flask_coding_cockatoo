@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+<div class="row justify-content-center">
+    <div class="col-md-auto">Total Cockatoo's:</div><div class="col-md-auto" id="count">0</div>
+</div>
+<div class="row justify-content-center">
+    <div class="col-md-auto">
+<input type="button" value="Click Me!" id="button">
+</div>
+</div>
+
+<script>
+    var number = 0
+    document.getElementById('button').addEventListener('click', update)
+
+    function update() {
+        var place = document.getElementById('count')
+        number ++
+        place.innerText = number
+    }
+</script>
+
+{% endblock %}

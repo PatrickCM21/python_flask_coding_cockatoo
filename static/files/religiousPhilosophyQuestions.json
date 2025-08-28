@@ -1,0 +1,103 @@
+[
+    {
+      "question": "Your ideal daily routine involves...",
+      "answers": [
+        "Tuning in to your environment and flowing with what the day brings.",
+        "Time for introspection and space to be alone with your thoughts.",
+        "A structured list with clear goals and rituals.",
+        "Discipline, purpose, and pushing yourself beyond yesterday's limits."
+      ],
+      "answer_philosopher": ["Shinto", "Buddhism", "Confucianism", "Bushido"]
+    },
+    {
+      "question": "What makes you feel most fulfilled?",
+      "answers": [
+        "Feeling connected with nature, people, and the moment.",
+        "Understanding something deep about the self or the universe.",
+        "Seeing your actions create harmony within your family or community.",
+        "Earning respect through loyalty, strength, and commitment."
+      ],
+      "answer_philosopher": ["Shinto", "Buddhism", "Confucianism", "Bushido"]
+    },
+    {
+      "question": "How do you approach conflict?",
+      "answers": [
+        "I try to soothe tensions and restore balance.",
+        "I reflect inward - conflict reveals truths.",
+        "I assess what's right and respond with fairness.",
+        "I stand my ground and protect my values."
+      ],
+      "answer_philosopher": ["Shinto", "Buddhism", "Confucianism", "Bushido"]
+    },
+    {
+      "question": "You're told to wait for something important. What do you do?",
+      "answers": [
+        "Observe the world around me while I wait - there's beauty in stillness.",
+        "Use the time to meditate or question why I'm waiting at all.",
+        "Plan how to make best use of the time and prepare.",
+        "Train, focus, and be ready the second I'm called upon."
+      ],
+      "answer_philosopher": ["Shinto", "Buddhism", "Confucianism", "Bushido"]
+    },
+    {
+      "question": "When someone wrongs you, your instinct is to...",
+      "answers": [
+        "Let time and nature guide the response - I don't hold onto it.",
+        "Examine my own reactions - maybe there's a lesson here.",
+        "Consider the social context and what is proper.",
+        "Defend my honour and respond decisively."
+      ],
+      "answer_philosopher": ["Shinto", "Buddhism", "Confucianism", "Bushido"]
+    },
+    {
+      "question": "Which proverb speaks most to you?",
+      "answers": [
+        "'The reed that bends in the wind survives the storm.'",
+        "'The mind is everything; what you think, you become.'",
+        "'Respect for one's parents is the root of virtue.'",
+        "'Fall seven times, rise eight.'"
+      ],
+      "answer_philosopher": ["Shinto", "Buddhism", "Confucianism", "Bushido"]
+    },
+    {
+      "question": "Your relationship with rules is...",
+      "answers": [
+        "I honour unspoken, natural laws.",
+        "I see rules as temporary tools for growth.",
+        "I believe in rules - they're the pillars of harmony.",
+        "I follow codes that demand my discipline and loyalty."
+      ],
+      "answer_philosopher": ["Shinto", "Buddhism", "Confucianism", "Bushido"]
+    },
+    {
+      "question": "What would bring you peace right now?",
+      "answers": [
+        "The sound of birdsong and the scent of earth.",
+        "A moment alone with my breath.",
+        "Knowing my duties are complete and others are cared for.",
+        "A clear purpose and the strength to follow it."
+      ],
+      "answer_philosopher": ["Shinto", "Buddhism", "Confucianism", "Bushido"]
+    },
+    {
+      "question": "When given a new challenge, what's your first move?",
+      "answers": [
+        "Feel it out, sense the rhythm of the situation.",
+        "Step back and seek insight before I engage.",
+        "Find structure - what are the roles, expectations, and tools?",
+        "Dive in, no hesitation - action is clarity."
+      ],
+      "answer_philosopher": ["Shinto", "Buddhism", "Confucianism", "Bushido"]
+    },
+    {
+      "question": "Which of these feels most like 'you'?",
+      "answers": [
+        "I am part of the web of life.",
+        "I am always becoming.",
+        "I am a link in a chain - my place matters.",
+        "I am forged in fire - I am duty and strength"
+      ],
+      "answer_philosopher": ["Shinto", "Buddhism", "Confucianism", "Bushido"]
+    }
+  ]
+  

@@ -1,0 +1,31 @@
+{
+    "Shinto": {
+      "title": "The Harmoniser",
+      "quote": "The reed that bends in the wind survives the storm.",
+      "info": "You flow with life and listen for its quiet rhythm. You believe in the sacredness of nature and the importance of presence. You don't seek to conquer the world, but to understand your place in it and move with grace. You notice the subtle, the sacred, and the seasonal. For you, harmony with nature is not just an idea - it's a way of life.",
+      "weakness": "Your gentle adaptability may sometimes make you appear indecisive or disengaged when firmness is needed.",
+      "picture": "https://blog.sakura.co/wp-content/uploads/2022/09/sakuraco_shinto-in-japan-thumbnail.png"
+    },
+    "Buddhism": {
+      "title": "The Seeker",
+      "quote": "The mind is everything; what you think, you become.",
+      "info": "You're drawn inward. Quietly questioning, calmly observing, you search for meaning beyond appearances. You believe peace comes from within, and life's challenges are opportunities to understand impermanence and the self. You are sensitive to suffering and often offer a quiet refuge for others.",
+      "weakness": "Your introspective nature might lead to withdrawal or detachment, especially when connection or action is needed.",
+      "picture": "https://cdn.shopify.com/s/files/1/0338/5478/3626/files/iStock-184377245_600x600.jpg?v=1659694181"
+    },
+    "Confucianism": {
+      "title": "The Order Keeper",
+      "quote": "Respect for one's parents is the root of virtue.",
+      "info": "You are a foundation for others, honouring tradition and social harmony. You value loyalty, family, duty, and education. In your presence, things feel anchored. You understand that structure enables peace, and that nurturing community begins with personal virtue. You bring order not through control, but through example.",
+      "weakness": "Your strong emphasis on tradition and hierarchy might at times limit spontaneity or openness to radical change.",
+      "picture": "https://chinesemartialstudies.com/wp-content/uploads/2012/11/konfuzius-1770.jpg"
+    },
+    "Bushido": {
+      "title": "The Devotee",
+      "quote": "Fall seven times, rise eight.",
+      "info": "With conviction and courage, you live by your values and give yourself fully to what matters. You respect discipline, loyalty, and honour. You move with intensity and focus - not for glory, but for the quiet strength that comes from integrity. You are not afraid of sacrifice, and you bring seriousness to every commitment.",
+      "weakness": "Your uncompromising sense of duty may cause inner tension or isolate you from more flexible, communal approaches.",
+      "picture": "https://cdn.shopify.com/s/files/1/0266/2403/2817/files/Les_7_valeurs_du_Bushido_1024x1024.jpg?v=1624043700"
+    }
+  }
+  

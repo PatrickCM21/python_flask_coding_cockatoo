@@ -1,0 +1,59 @@
+{
+    "Albert Camus": {
+        "quote": "The struggle itself toward the heights is enough to fill a man's heart. One must imagine Sisyphus happy.",
+        "info": "Absurdism, which explores the conflict between humanity's desire for meaning and the indifferent universe. You confront life's absurdities head-on, embracing its lack of inherent meaning while carving out your own purpose. You find beauty in the struggle and are unafraid to question conventional wisdom. Life for you isn't about answers but about living authentically and fully.",
+        "weakness": "The tension between acknowledging life's absurdity and creating your own meaning can lead to existential frustration or moments of apathy.",
+        "similar philosophers": [
+            "Soren Kierkegaard (Existentialism and faith)",
+            "Friedrich Nietzsche (Existentialism and will to power)",
+            "Jean-Paul Sartre (Freedom and responsibility)"
+        ],
+        "picture": "https://media.newyorker.com/photos/5909675d019dfc3494ea0dd0/master/pass/120409_r22060_g2048.jpg"
+    },
+    "Laozi": {
+        "quote": "Life is a series of natural and spontaneous changes. Don't resist them; that only creates sorrow. Let reality be reality.",
+        "info": "Daoism (Taoism), which centers on the Dao (the Way) as the principle of harmony and balance in the universe. You value harmony, simplicity, and the natural flow of life. Instead of resisting challenges, you adapt with grace and seek balance in all things. For you, the path of least resistance is often the wisest, and you trust that life unfolds as it should.",
+        "weakness": "Your inclination to 'go with the flow' can make you seem passive or disengaged, especially when action or confrontation is required.",
+        "similar philosophers": [
+            "Zhuangzi (Playfulness and Daoism)",
+            "Epicurus (Simple living and contentment)",
+            "Buddha (Harmony with existence)"
+        ],
+        "picture": "https://miro.medium.com/v2/resize:fit:541/1*8-Xd1YP70qiJWddAQtzAVA.jpeg"
+    },
+    "Immanuel Kant": {
+        "quote": "Act only according to that maxim whereby you can at the same time will that it should become a universal law.",
+        "info": "Deontology, which emphasizes duty, rationality, and universal moral principles as outlined in the Categorical Imperative. You live by principles, driven by a strong sense of duty and moral clarity. Rationality guides your decisions, and you strive to act in ways that respect the dignity and autonomy of others. Your values are steadfast, and you aim to live a life aligned with universal moral laws.",
+        "weakness": "A rigid adherence to rules can make you inflexible in morally ambiguous situations or disconnected from emotional nuances in relationships.",
+        "similar philosophers": [
+            "John Locke (Rational ethics and natural law)",
+            "Jean-Jacques Rousseau (Duty and the social contract)",
+            "John Stuart Mill (Moral frameworks, though utilitarian)"
+        ],
+        "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Immanuel_Kant_-_Gemaelde_1.jpg/800px-Immanuel_Kant_-_Gemaelde_1.jpg"
+    },
+    "Marcus Aurelius": {
+        "quote": "You have power over your mind-not outside events. Realize this, and you will find strength.",
+        "info": "Stoicism, which emphasizes rationality, self-control, and living in harmony with nature's order. You embody resilience, rationality, and self-discipline. Challenges are opportunities to practice virtue and strengthen your character. You remain calm under pressure and focus only on what you can control, letting go of the rest. For you, inner peace is the ultimate goal.",
+        "weakness": "Your stoic demeanor may come across as emotionally distant or overly reserved, leaving others feeling you are detached or unapproachable.",
+        "similar philosophers": [
+            "Epictetus (Stoic resilience)",
+            "Seneca (Wisdom through adversity)",
+            "Cicero (Practical virtue and rationality)"
+        ],
+        "picture": "https://cdn.britannica.com/67/148167-050-F596E6F2/Marcus-Aurelius-statue-Rome-Piazza-del-Campidoglio.jpg"
+    },
+    "Aristotle": {
+        "quote": "Excellence is never an accident. It is always the result of high intention, sincere effort, and intelligent execution.",
+        "info": "Virtue Ethics, which emphasizes character, habits, and practical wisdom as keys to a flourishing life. You seek balance and fulfillment by cultivating virtues and striving for excellence in every aspect of life. Practical wisdom (phronesis) guides you, and you believe happiness (eudaimonia) comes from living a life of purpose and moral character.",
+        "weakness": "Your focus on balance and analysis can make you hesitant to take risks or overly cautious in situations requiring bold action.",
+        "similar philosophers": [
+            "Plato (Virtue and the Good)",
+            "Confucius (Virtue in relationships and balance)",
+            "Alasdair MacIntyre (Modern virtue ethics)"
+        ],
+        "picture": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Aristotle_Altemps_Inv8575.jpg/800px-Aristotle_Altemps_Inv8575.jpg"
+    }
+}
+
+

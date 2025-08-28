@@ -1,0 +1,203 @@
+body {
+    background-color: #f5f5dc !important;
+    font-family: 'Times New Roman', serif !important;
+}
+
+/* LAYOUT CSS */
+
+.nav-link:hover {
+    color: rgb(41, 194, 228) !important;
+    background-color: transparent !important;
+    text-decoration: none !important;
+}
+
+#home {
+    background-image: url(images/cockatooicon.png);
+    width: 38px !important;
+    height: 40px !important;
+    margin-left: 10px !important;
+    position: absolute !important;
+    background-size: cover !important;
+    background-position: center !important;
+
+}
+
+#home:hover {
+    background-image: url(images/goldencockatoo.png);
+    transform: scale(1.2);
+}
+
+/* AI DINNER CSS */
+
+.context, .dialogue {
+    font-family: Arial, Helvetica, sans-serif;
+    border: 2px solid black; 
+    background-color: #fffff5;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.context {
+    font-style: italic;
+}
+
+/* MBTI CSS */
+.guestpic {
+    height: auto;
+    width: 60px;
+}
+
+.picMBTI {
+    height: auto;
+    width: 230px;
+}
+
+.mbtiQuestion {
+    font-size: 16px;
+}
+
+.mbtiAnswers{
+    font-size: 12px;
+}
+
+/* HOME CSS */
+
+.imageLink {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 19px;
+    border-style: solid !important;
+    border: 3px !important;
+}
+
+.imageLink:hover {
+    transform: scale(1.2); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* HOW MANNY CSS */
+
+.manyimg {
+    width: auto !important;
+    height: 120px !important;
+    aspect-ratio: 16/9 !important;
+}
+
+.odometer {
+    font-size: 60px;
+}
+
+.fa-circle-info:hover {
+    transform: scale(1.2); 
+}
+
+.fa-circle-info:hover + .info-container::before{
+    transform: scale(0.8); 
+    opacity: 1;
+}
+
+.info-container::before{
+    content: attr(data-info);
+    position: absolute;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 100px;
+    opacity: 0;
+}
+
+/* Cockatoo Clicker Styles */
+
+.tracker {
+    font-size: 60px;
+    font-weight: bold;
+    padding-top: 30px;
+}
+
+#clicker {
+    width: 180px !important;
+    height: 224px !important;
+    background-image: url(images/CagedCockatoo.png);
+    background-size: cover !important;
+    background-position: center !important;
+    display: block !important;
+}
+
+#clicker:hover {
+    transform: scale(1.02);
+}
+
+#clicker:active {
+    transform: scale(0.98);
+}
+
+
+.upgrade:hover {
+    transform: scale(1.02);
+
+}
+
+.upgradeInfo {
+    position: absolute;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    opacity: 0;
+}
+
+.upgrade:active {
+    transform: scale(0.98);
+}
+
+.upgrade:hover .upgradeInfo{
+    transform: scale(0.8); 
+    opacity: 1;
+}
+
+/* Calore Guesser Stuff */
+
+.guesserImg {
+    height: 300px !important;
+    width: auto !important;
+    object-fit: contain !important;
+}
+
+.slide {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #04AA6D; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+  }
+
+/* HIDDEN GEMS CSS */
+
+.gemImg {
+    width: 80px !important;
+    height: auto !important;
+
+}

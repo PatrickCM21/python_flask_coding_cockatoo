@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<section class="container mt-3 text-center">
+    <div class="row"><div class="h1">Welcome To The Home of </div><div class="h2">The Curious Cockatoo</div></div>
+    <img src="{{ url_for('static', filename='images/cockatoo.ico') }}" class="rounded border border-primary">
+    <div class="row"><div class="col mt-1 border-bottom border-dark border-2">I do coding stuff here.</div></div>
+
+    <div class="row"><div class="col-md-auto h2 mb-3 mt-1">My Projects:</div></div>
+    <div class="container"><!-- Projects -->
+        <div class="row mb-4">
+            <div class="col"><a class="projectLink" href="/dinner"><img class= "imageLink" src="{{ url_for('static', filename='images/AI Dinner.png')}}" alt="AI Dinner"></a></div>
+            <div class="col"><a class="projectLink" href="/philosophy_mbti"><img class= "imageLink" src="{{ url_for('static', filename='images/MBTI Philosophy.png')}}" alt="Philosophy MBTI"></a></div>
+            <div class="col"><a class="projectLink" href="/how_many"><img class= "imageLink" src="{{ url_for('static', filename='images/howMany.png')}}" alt="how Many"></a></div>
+        </div>
+        <div class="row mb-4">
+            <div class="col"><a class="projectLink" href="/alright_anagrams"><img class= "imageLink" src="{{ url_for('static', filename='images/actuallyAlrightAnagrams.png')}}" alt="actually Alright Anagrams"></a></div>
+            <div class="col"><a class="projectLink" href="/cockatoo_clicker"><img class= "imageLink" src="{{ url_for('static', filename='images/cockatooClicker.png')}}" alt="cockatoo Clicker"></a></div>
+            <div class="col"><a class="projectLink" href="/ghost_notes"><img class= "imageLink" src="{{ url_for('static', filename='images/ghostNotes.png')}}" alt="ghost Notes"></a></div>
+        </div>
+        <div class="row mb-4">
+            <div class="col"><a class="projectLink" href="/steam_gems"><img class= "imageLink" src="{{ url_for('static', filename='images/hiddenGemFinder.png')}}" alt="hidden Gem Finder"></a></div>
+            <div class="col"><a class="projectLink" href="/cipher_maker"><img class= "imageLink" src="{{ url_for('static', filename='images/cipherMaker.png')}}" alt="cipher Maker"></a></div>
+            <div class="col"><a class="projectLink" href="/"><img class= "imageLink" src="{{ url_for('static', filename='images/Comingsoon.png')}}" alt="Coming Soon!"></a></div>
+        </div>
+    </div>
+    <div class="row mt-4"></div><!-- Empty space -->
+</section>
+
+<script>
+    var images = document.querySelectorAll('.imageLink')
+    for (const image of images) {
+        image.classList.add('border', 'border-2', 'border-black')
+    }
+</script>
+{% endblock %}

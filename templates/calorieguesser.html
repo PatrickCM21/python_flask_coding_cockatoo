@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row mt-3"><div class="h1 text-center">Do You Know What's In The Food You Eat?</div></div>
+    <div id="quizHolder" class="mt-2">
+        <div class="row text-center mb-2">We are often blinded to just how bad the food we eat is. Let's see if your eyes are open. Or if your stomache is always ending up more full than you want it.</div>
+        <div class="row justify-content-center mb-2">
+            <div class="col-md-auto">What Measurement Would You Like?</div>
+            <div class="col-md-auto">
+                <label for="calories"><input id="calories" type="radio" name="measurement" class="radio" value="Calories" checked> Calories</label>
+                <label for="kilojoules"><input id="kilojoules" type="radio" name="measurement" class="radio" value="Kilojoules"> Kilojoules</label>
+            </div>
+        </div>
+        <div class="row justify-content-center"><div class="col-md-auto d-flex flex-column align-items-center"><input type="button" value="Let's Start!" class="btn btn-primary" id="start"></div>
+    </div>
+</div>
+
+
+<script src="{{url_for('static', filename='scriptCalorieGuesser.js')}}"></script>
+{% endblock %}

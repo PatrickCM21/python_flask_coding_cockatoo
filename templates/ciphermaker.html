@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<div class="container">
+    <div class="row h1 justify-content-center mt-3">Substitution Cipher Maker</div>
+
+    <div class="row">
+        <label>What is your purpose?</label>
+        <label for="encryption"><input type="radio" id="encryption" value="encryption" name="purpose" checked> Encryption</label>
+        <label for="decryption"><input type="radio" id="decryption" value="decryption" name="purpose" > Decryption</label>
+    </div>
+    <div class="row mt-1">
+        <label>Text:</label>
+        <textarea placeholder="Message To Encrypt..." id="input"></textarea>
+    </div>
+    <div class="row mt-1" id="languageBox">
+        <label>What Language Is Your Text??</label>
+        <select name="language" id="language">
+            <option value="English" selected="selected">English</option>
+            <option value="Wingdings">Wingdings</option>
+            <option value="Emoji">Emoji</option>
+            <option value="Webdings">Webdings</option>
+        </select>
+    </div>
+    <div class="row mt-1">
+        <label>Password:</label>
+        <input type="text" id="password">
+    </div>
+    <div class="row mt-1">
+        <label for="spacing"><input type="checkbox" id="spacing" value="spacing" checked> Keep Spacing</label>
+        <label for="punctuation"><input type="checkbox" id="punctuation" value="punctuation" checked> Keep Punctuation</label>
+    </div>
+    <div class="row mt-1 mb-3">
+        <label>Output Message:</label>
+        <textarea placeholder="Output..." id="output" readonly></textarea>
+    </div>
+
+</div>
+
+<script src="{{url_for('static', filename='scriptCipher.js')}}"></script>
+{% endblock %}

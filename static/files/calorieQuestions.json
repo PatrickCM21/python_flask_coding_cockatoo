@@ -1,0 +1,27 @@
+{
+    "Compare": [
+        {
+            "Img1": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Bubble_Tea.png",
+            "Img2": "https://www.chobani.com.au/wp-content/uploads/907g-Chobani-Core-Natural-Front-2023-800x800-1.png",
+            "Calories1": 517,
+            "Calories2": 510,
+            "Food1": "Pearl Milk Tea",
+            "Food2": "An Entire 900g Tub of Greek Yoghurt"
+        }
+    ],
+    "Sugar": [
+        {
+            "Img": null,
+            "Calories": 0,
+            "Food": "",
+            "Sugar": ""
+        }
+    ],
+    "GuessCalories": [
+        {
+        "Img": "https://www.pngkey.com/png/full/81-812514_big-mac-meal-png.png",
+        "Calories": 1219,
+        "Food": "Large Big Mac Meal - Chips and Coke"
+    }
+    ]
+}
